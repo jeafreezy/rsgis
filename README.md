@@ -25,7 +25,13 @@ A python package for basic to Advanced GIS operations.
     
     mtd.get_some(['sun','path','row']) #To get multiple parameters. Returns a list of values.
     
+## Command line Use
+Change directory into the rsgis folder to run
 
+        python main.py --dir_path [path/to/metadata/file] --get [parametr to get]
+        
+        #This command returns the result of the --get query 
+        
 ## Running the tests
 
  Paste a metadata file in the data dir(delete old one) in tests and cd into the test dir then run in terminal<br>
