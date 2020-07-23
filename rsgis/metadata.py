@@ -2,7 +2,7 @@
 ******************************************
 MODULE FOR METADATA FILE ACCESS
 ******************************************
-Author1: Jolaiya Emmanuel -> jolaiyaemmanuel@gmail.com
+Author: Jolaiya Emmanuel -> jolaiyaemmanuel@gmail.com
 License: Apache
 ******************************************
 """
