@@ -2,9 +2,12 @@
 A python package for basic GIS operations.
 
 ## Current release 
+- Metadata file module
 
-- Metadata file handling API
-
+## Future release 
+- Metadata file for other file formats(sentinel,NetCDF etc)
+- A one liner for basic to advanced GIS operations
+ 
 ## Installation
 #### Python version 3.0 +<br>
     pip install rsgis
@@ -25,16 +28,20 @@ A python package for basic GIS operations.
 
 ## Running the tests
 
- Paste a metadata file in the data dir(delete old one) in tests and run<br>
+ Paste a metadata file in the data dir(delete old one) in tests and cd into the test dir then run in terminal<br>
 
-    python metadata_test.py in terminal
+    python metadata_test.py 
  If no error,then the file is valid. You can go ahead to using the class.
 ## Contributing.
 
- PRs and issues are welcomed.
+ PRs and issues are welcomed and not limited to the following:
+ - Code documentation
+ - Refactoring
+ - Adding support for other metadata file types etc
  
 ## Authors:
-**Jolaiya Emmanuel** - [@jeafreezy](https://twitter.com/jeafreezy) <br>
+**Jolaiya Emmanuel** - [Twitter](https://twitter.com/jeafreezy), [Email](jolaiyaemmanuel@gmail.com) <br>
+**Oke Matthew** - [Email](matthewoke16@gmail.com) <br>
 
 ## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE.md](LICENSE.md) file for details

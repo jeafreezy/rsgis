@@ -3,40 +3,34 @@
 MODULE FOR METADATA FILE ACCESS
 ******************************************
 Author1: Jolaiya Emmanuel -> jolaiyaemmanuel@gmail.com
-Author2: Oke Matthew -> mattewoke16@gmail,com
-This package is developed for the department of Remote Sensing and GIS
 License: Apache
 ******************************************
 """
 
+########
 # HOW TO USE
 
 """
 To get a particular parameter from the metadata file:
  
  #import
- from rsgis import metadata, landsat
- L8=landsat.extract('path\to\downloaded\landsat\file')
+ from rsgis import Metadata
+ mtd=Metadata('path\to\downloaded\landsat\file')
  
+mtd.get('Solar Angle') = Returns the solar angle value in the metadata file
  
- meta_path=L8.get_metadata()
+ metadata.get_some(['Solar Angle','RADIANCE']) = Return a list of the queried values in the metadata file
  
- metadata.get(meta_path,'Solar Angle') = Returns the solar angle value in the metadata file
- 
- metadata.get_some(meta_path,['Solar Angle','RADIANCE']) = Return a list of the queried values in the metadata file
- 
- metadata.get_all(met_path) = Return a dictionary of all the parameters in the metadata file
+ metadata.get_all() = Return a dictionary of all the parameters in the metadata file
  
  
 """
 
-# from rsgis import landsat
 import os
-
 
 class Metadata:
     """
-        This class handles Landsat Metadata file(.MTL) parameter access and query.
+        This class handles the metadata files parameter access and query.
 
         Args:
 
@@ -54,6 +48,8 @@ class Metadata:
     def _utility(self) -> dict:
 
         """Utility class to read metadata file and convert to dictionary"""
+
+        #LANDSAT
         file=os.path.basename(self.path)
         assert isinstance(file, str), 'path must be of type string'
 
@@ -88,7 +84,7 @@ class Metadata:
     def _incomplete_str_support(self, param:'str', metadata_dict:'dict') -> str:
 
         """
-        A private methode to guess incomplete query strings
+        A private method to guess incomplete query strings
         :param param:
         :param metadata_dict:
         :return: str or/and dict of guesses
@@ -141,7 +137,6 @@ class Metadata:
         """
             This method returns the value of any metadata parameter query if found,raises error if not found and suggest likely search pattern
             Args:
-                 path: for command_line use
                  param: parameter to query
             return:
 
@@ -152,7 +147,6 @@ class Metadata:
              AssertionError
 
         """
-        # path=landsat.get_metadata()
         assert isinstance(param,
                           str), f'Argument must be a string and not {type(param)}. Try get_some() or get_all() method instead'
         metadata_dict = self._utility()
@@ -222,11 +216,11 @@ class Metadata:
 
                 AssertionError
         """
-        # path=landsat.get_metadata()
+
 
         return  self._utility()
 
-###########COMMAND LINE SUPPORT##################################\
+###########COMMAND LINE SUPPORT####################
 
     def get_cli(self, param: 'str') -> str:
 
@@ -244,7 +238,7 @@ class Metadata:
              AssertionError
 
         """
-        # path=landsat.get_metadata()
+
         assert isinstance(param,
                           str), f'Argument must be a string and not {type(param)}. Try get_some() or get_all() method instead'
         metadata_dict = self._utility()
