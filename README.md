@@ -37,7 +37,7 @@ Change directory into the rsgis folder to run
  Paste a metadata file in the data dir(delete old one) in tests and cd into the test dir then run in terminal<br>
 
     python metadata_test.py 
- If no error,then the file is valid. You can go ahead to using the class.
+ If no error,then you can go ahead to do some magic.
 ## Contributing.
 
  PRs and issues are welcomed and not limited to the following:
