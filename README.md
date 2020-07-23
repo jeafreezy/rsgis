@@ -11,6 +11,28 @@ A python package for basic to Advanced GIS operations.
 ## Installation
 #### Python version 3.0 +<br>
     pip install rsgis
+    
+#### Extracting files <br>
+     #import the class
+    from rsgis import landsat
+    
+    #Extract all files
+    data = landsat.extract(path/to/landsat/dataset)
+    
+    #To check path to extracted data
+    data.path
+    
+    #Extract specific bands
+    #Here we will extract the metadata = 0, band1 = 1 and band2 = 2
+    data = landsat.extract(path/to/landsat/dataset, bands = [0, 1, 2]
+    
+    #Get metadata path
+    data.get_metadata()
+    
+    #Get path(s) to specific band(s)
+    #In this example, we will be gettng band4 and band5
+    data.get_bands(4, 5)
+    
 #### Using the Metadata module <br>
      #import the class
     from rsgis import Metadata
