@@ -1,11 +1,11 @@
 # rsgis
-A python package for basic GIS operations.
+A python package for basic to Advanced GIS operations.
 
 ## Current release 
-- Metadata file module
+- Landsat metadata support module
 
 ## Future release 
-- Metadata file for other file formats(sentinel,NetCDF etc)
+- Metadata support for other file formats(sentinel,NetCDF etc)
 - A one liner for basic to advanced GIS operations
  
 ## Installation
