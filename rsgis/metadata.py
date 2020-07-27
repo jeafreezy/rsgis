@@ -1,8 +1,9 @@
 """
 ******************************************
-MODULE FOR METADATA FILE ACCESS
+MODULE FOR METADATA FILE HANDLING
 ******************************************
-Author: Jolaiya Emmanuel -> jolaiyaemmanuel@gmail.com
+Author1: Jolaiya Emmanuel -> jolaiyaemmanuel@gmail.com
+Author2: Oke Matthew -> matthewoke16@gmail,com
 License: Apache
 ******************************************
 """
