@@ -1,10 +1,10 @@
 ### Content
- - [Current release](#Currentrelease)
- - [Future release](#Futurerelease)
+ - [Current release](#Current_Release)
+ - [Future release](#Future_Release)
  - [Installation](#Installation)
- - [Quick tutorial](#Quicktutorial)
- - [Command line Use](#CommandlineUse)
- - [Running the tests](#Runningthetests)
+ - [Quick tutorial](#Quick_Tutorial)
+ - [Command line Use](#Command_Line_Use)
+ - [Running the tests](#Running_The_Tests)
  - [Authors](#Authors)
  - [License](#License)
  
@@ -12,11 +12,11 @@
 # rsgis
 A python package for basic to Advanced GIS operations.
 
-# Current release 
+# Current_Release 
 - Metadata support module for landsat
 - Landsat module for landsat bands extraction and manipulation
 
-# Future release 
+# Future_Release 
 - Metadata support for other file formats(sentinel,NetCDF etc)
 - A one liner for basic to advanced GIS operations
 - NDVI,NDWI,NDBI
@@ -29,7 +29,7 @@ The package is available on the python package index(Pypi),to install use the co
         pip install rsgis
   ```
 
-# Quick tutorial
+# Quick_Tutorial
 ### Using the landsat module <br>
 ```python
      #import the module
@@ -68,14 +68,14 @@ The package is available on the python package index(Pypi),to install use the co
     
     mtd.get_some(['sun','path','row']) #To get multiple parameters. Returns a list of values.
 ``` 
-# Command line Use
+# Command_Line_Use
 Change directory into the rsgis folder to run
 ```shell script
 
-        python main.py --dir_path [path/to/metadata/file] --get [parametr to get]
-        #This command returns the result of the --get query 
+    python main.py --dir_path [path/to/metadata/file] --get [parametr to get]
+    #This command returns the result of the --get query 
 ```      
-# Running the tests
+# Running_The_Tests
 
  Paste a metadata file in the data dir(delete old one) in tests and cd into the test dir then run in terminal<br>
 
