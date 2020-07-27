@@ -92,6 +92,6 @@ Change directory into the rsgis folder to run
 **Jolaiya Emmanuel** - [Twitter](https://twitter.com/jeafreezy), [Email](jolaiyaemmanuel@gmail.com) <br>
 **Oke Matthew** - [Email](matthewoke16@gmail.com) <br>
 
-#License
+# License
 This project is licensed under the Apache 2.0 License - see the [LICENSE.md](LICENSE.md) file for details
 
