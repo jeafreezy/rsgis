@@ -1,10 +1,10 @@
 ### Content
- - [Current release](#Current release)
- - [Future release](#Future release)
+ - [Current release](#Currentrelease)
+ - [Future release](#Futurerelease)
  - [Installation](#Installation)
- - [Quick tutorial](#Quick tutorial)
- - [Command line Use](#Command line Use)
- - [Running the tests](#Running the tests)
+ - [Quick tutorial](#Quicktutorial)
+ - [Command line Use](#CommandlineUse)
+ - [Running the tests](#Runningthetests)
  - [Authors](#Authors)
  - [License](#License)
  
@@ -24,13 +24,13 @@ A python package for basic to Advanced GIS operations.
  
 # Installation
 The package is available on the python package index(Pypi),to install use the command below;
-###Python version 3.0 +<br>
+### Python version 3.0 +<br>
   ```python
         pip install rsgis
   ```
 
 # Quick tutorial
-###Using the landsat module <br>
+### Using the landsat module <br>
 ```python
      #import the module
     from rsgis import landsat
@@ -54,7 +54,7 @@ The package is available on the python package index(Pypi),to install use the co
     data.get_bands(4, 5)
 
 ```
-###Using the Metadata module with the Landsat Module <br>
+### Using the Metadata module with the Landsat Module <br>
 ```python
     #import the class
     from rsgis import Metadata,landsat
