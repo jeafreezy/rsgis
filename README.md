@@ -27,6 +27,7 @@ The package is available on the python package index(Pypi),to install use the co
 ### Python version 3.0 +<br>
   ```python
         pip install rsgis
+        pip install rsgis==0.0.3
   ```
 
 # Quick_Tutorial
